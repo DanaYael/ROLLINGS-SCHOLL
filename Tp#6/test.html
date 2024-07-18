@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Anidado con HTML y CSS</title>
+    <style>
+      /* Estilos básicos para el navbar */
+      .navbar {
+        display: flex;
+        background-color: #f8f9fa;
+        padding: 1rem;
+      }
+
+      .navbar a {
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #000;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f8f9fa;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content .dropdown {
+        position: relative;
+      }
+
+      .dropdown-content .dropdown-content {
+        top: 0;
+        left: 100%;
+        display: none;
+        margin-top: -1px;
+      }
+
+      .dropdown-content .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="dropdown">
+        <a href="#">Dropdown</a>
+        <div class="dropdown-content">
+          <a href="#">Action</a>
+          <a href="#">Another action</a>
+          <div class="dropdown">
+            <a href="#">Submenu</a>
+            <div class="dropdown-content">
+              <a href="#">Submenu action 1</a>
+              <a href="#">Submenu action 2</a>
+            </div>
+          </div>
+          <a href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dana" />
+    <meta name="keywords" content="Plata 925, Joyas, Bijouterie" />
+    <meta name="description" content="Monaco Accesorios" />
+    <link rel="shortcut icon" href="/fotos/logo.jpg" type="image/x-icon" />
+    <title>Monaco Accesorios</title>
+    <link rel="stylesheet" href="Registrarse.Nesting.CSS" />
+    <script
+      src="https://kit.fontawesome.com/e0011ec9c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <section>
+          <a href="../index.html">
+            <img src="../fotos/logo.jpg" alt="logo de Monaco" width="100" />
+          </a>
+        </section>
+        <section class="interaccion">
+          <a href="../index.html">Inicio</a>
+          <a href="../paginas Monaco/sobrenosotros.html">Sobre Nosotros</a>
+        </section>
+        <section class="usuario">
+          <a href="../paginas Monaco/iniciarsecion.html">Iniciar Sesión</a>
+          <a href="../paginas Monaco/registrarse.html">Registrarse</a>
+        </section>
+      </nav>
+    </header>
+    <div class="buscar-container">
+      <input type="text" placeholder="Buscar Productos" />
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <main>
+      <form>
+        <h2>CREAR CUENTA</h2>
+        <h4>
+          Compra más rápido y lleva el control de tus pedidos ¡En un solo lugar!
+        </h4>
+        <fieldset>
+          <legend>DATOS PERSONALES</legend>
+          <label for="fullname">Nombre Completo</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Escriba su Nombre"
+            required
+          />
+          <label for="city">Ciudad</label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="Escriba su Ciudad"
+            pattern="[A-Za-z]+"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <legend>CONTACTO</legend>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ejemplo@gmail.com"
+            required
+          />
+          <label for="phone">Teléfono (Opcional)</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Ej: 223562..."
+            pattern="[0-9]{7,15}"
+            maxlength="15"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>USUARIO</legend>
+          <label for="username"
+            >Nombre de Usuario
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Escriba un nombre de usuario"
+              pattern="[A-Za-z0-9]{10,}"
+              required
+            />
+          </label>
+          <label for="password"
+            >Contraseña
+            <i class="fa-solid fa-lock"></i>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Contraseña"
+              pattern="[A-Za-z0-9@#$%^&*]{10,20}"
+              maxlength="20"
+              required
+            />
+          </label>
+          <label for="confirm-password"
+            >Confirmar Contraseña
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Confirmar Contraseña"
+              pattern="[A-Za-z0-9@#$%^&*]{10,20}"
+              maxlength="20"
+              required
+            />
+          </label>
+        </fieldset>
+        <div class="btn-container">
+          <button class="btn-cuenta" type="submit">CREAR CUENTA</button>
+        </div>
+        <div class="checkbox-container">
+          <label for="terms"
+            >Acepto los
+            <a href="../paginas Monaco/terms.html">Términos y Condiciones</a>
+            <input type="checkbox" id="terms" class="checkbox" required />
+          </label>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <section>
+        <img src="/MONACO/fotos/logo.jpg" alt="" width="150" />
+      </section>
+      <section>
+        <a href="">Instagram</a>
+        <a href="">Facebook</a>
+        <a href="">Contacto</a>
+      </section>
+      <section>
+        <a href="">Trabaja con nosotros</a>
+        <a href="">Términos y condiciones</a>
+      </section>
+      <section>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50257.846217537226!2d-57.61275513046875!3d-38.067693777431074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584e0aa0015c7fd%3A0x4e874b80fb8258d4!2sAvenida%20Mario%20Bravo%20%26%20Don%20Arturo%2C%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses-419!2sbr!4v1717002908109!5m2!1ses-419!2sbr"
+          width="200"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </footer>
+  </body>
+</html>

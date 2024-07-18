@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-nav {
+  background-color: rgb(43, 90, 233);
+}
+
+.bg-banda {
+  background: rgb(201, 201, 201);
+}
+
+.btn-primary:hover {
+  background: rgb(26, 63, 225);
+}
+
+.img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item {
+  width: 1800px;
+  max-height: 500px;
+}
+
+.card img {
+  height: 300px;
+}
