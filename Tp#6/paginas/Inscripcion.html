@@ -14,89 +14,95 @@
   <body>
     <div class="container mt-5">
       <h1 class="text-center">Formulario de Inscripción</h1>
-      <form>
-        <!-- Información Personal -->
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required />
-        </div>
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre" required />
-        </div>
-        <div class="mb-3">
-          <label for="apellido" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="apellido" required />
-        </div>
-        <div class="mb-3">
-          <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
-          <input type="date" class="form-control" id="fechaNacimiento" required />
-        </div>
 
-        <!-- Contenedor para Dropdowns -->
-        <div class="row mb-3">
-          <!-- Dropdown Edad -->
-          <div class="col-md-4">
-            <label for="edad" class="form-label">Edad</label>
-            <select class="form-select" id="edad" required>
-              <option value="" selected disabled>Seleccionar Edad</option>
-              <option value="adulto">Adulto</option>
-              <option value="niño">Niño</option>
+      <!-- Datos Personales -->
+      <div class="mt-4">
+        <h2>Datos Personales</h2>
+        <form>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido" required />
+            </div>
+            <div class="col-md-6">
+              <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+              <input type="date" class="form-control" id="fechaNacimiento" required />
+            </div>
+          </div>
+
+          <!-- Curso a Elegir -->
+          <h2 class="mt-4">Curso a Elegir</h2>
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="edad" class="form-label">Edad</label>
+              <select class="form-select" id="edad" required>
+                <option value="" selected disabled>Seleccionar Edad</option>
+                <option value="adulto">Adulto</option>
+                <option value="niño">Niño</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="nivel" class="form-label">Nivel</label>
+              <select class="form-select" id="nivel" required>
+                <option value="" selected disabled>Seleccionar Nivel</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="turno" class="form-label">Turno</label>
+              <select class="form-select" id="turno" required>
+                <option value="" selected disabled>Seleccionar Turno</option>
+                <option value="mañana">Mañana</option>
+                <option value="tarde">Tarde</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="aula" class="form-label">Aula</label>
+            <select class="form-select" id="aula" required>
+              <option value="" selected disabled>Seleccionar Aula</option>
             </select>
           </div>
 
-          <!-- Dropdown Nivel -->
-          <div class="col-md-4">
-            <label for="nivel" class="form-label">Nivel</label>
-            <select class="form-select" id="nivel" required>
-              <option value="" selected disabled>Seleccionar Nivel</option>
-            </select>
+          <!-- Información de Pago -->
+          <h2 class="mt-4">Información de Pago</h2>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="tipoTarjeta" class="form-label">Tipo de Tarjeta</label>
+              <select class="form-select" id="tipoTarjeta" required>
+                <option value="" selected disabled>Seleccionar Tipo de Tarjeta</option>
+                <option value="credito">Crédito</option>
+                <option value="debito">Débito</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="numeroTarjeta" class="form-label">Número de Tarjeta</label>
+              <input type="text" class="form-control" id="numeroTarjeta" required />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="fechaExpiracion" class="form-label">Fecha de Expiración</label>
+              <input type="month" class="form-control" id="fechaExpiracion" required />
+            </div>
+            <div class="col-md-6">
+              <label for="codigoSeguridad" class="form-label">Código de Seguridad</label>
+              <input type="text" class="form-control" id="codigoSeguridad" required />
+            </div>
           </div>
 
-          <!-- Dropdown Turno -->
-          <div class="col-md-4">
-            <label for="turno" class="form-label">Turno</label>
-            <select class="form-select" id="turno" required>
-              <option value="" selected disabled>Seleccionar Turno</option>
-              <option value="mañana">Mañana</option>
-              <option value="tarde">Tarde</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Dropdown Aulas -->
-        <div class="mb-3">
-          <label for="aula" class="form-label">Aula</label>
-          <select class="form-select" id="aula" required>
-            <option value="" selected disabled>Seleccionar Aula</option>
-          </select>
-        </div>
-
-        <!-- Sección de Pago -->
-        <h2 class="mt-4">Información de Pago</h2>
-        <div class="mb-3">
-          <label for="tipoTarjeta" class="form-label">Tipo de Tarjeta</label>
-          <select class="form-select" id="tipoTarjeta" required>
-            <option value="" selected disabled>Seleccionar Tipo de Tarjeta</option>
-            <option value="credito">Crédito</option>
-            <option value="debito">Débito</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <label for="numeroTarjeta" class="form-label">Número de Tarjeta</label>
-          <input type="text" class="form-control" id="numeroTarjeta" required />
-        </div>
-        <div class="mb-3">
-          <label for="fechaExpiracion" class="form-label">Fecha de Expiración</label>
-          <input type="month" class="form-control" id="fechaExpiracion" required />
-        </div>
-        <div class="mb-3">
-          <label for="codigoSeguridad" class="form-label">Código de Seguridad</label>
-          <input type="text" class="form-control" id="codigoSeguridad" required />
-        </div>
-
-        <button type="submit" class="btn btn-primary">Inscribirse</button>
-      </form>
+          <button type="submit" class="btn btn-primary">Inscribirse</button>
+        </form>
+      </div>
     </div>
 
     <script
