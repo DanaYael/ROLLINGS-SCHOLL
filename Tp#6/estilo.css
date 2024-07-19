@@ -27,8 +27,9 @@
   height: 300px;
 }
 
-.img-grande {
-  height: 80vh;
+.img-cover {
+  object-fit: cover;
+  height: 80vh;  
 }
 
 .customer-width {
