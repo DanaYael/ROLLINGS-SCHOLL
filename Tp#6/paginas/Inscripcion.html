@@ -33,32 +33,35 @@
           <input type="date" class="form-control" id="fechaNacimiento" required />
         </div>
 
-        <!-- Dropdown Edad -->
-        <div class="mb-3">
-          <label for="edad" class="form-label">Edad</label>
-          <select class="form-select" id="edad" required>
-            <option value="" selected disabled>Seleccionar Edad</option>
-            <option value="adulto">Adulto</option>
-            <option value="niño">Niño</option>
-          </select>
-        </div>
+        <!-- Contenedor para Dropdowns -->
+        <div class="row mb-3">
+          <!-- Dropdown Edad -->
+          <div class="col-md-4">
+            <label for="edad" class="form-label">Edad</label>
+            <select class="form-select" id="edad" required>
+              <option value="" selected disabled>Seleccionar Edad</option>
+              <option value="adulto">Adulto</option>
+              <option value="niño">Niño</option>
+            </select>
+          </div>
 
-        <!-- Dropdown Nivel -->
-        <div class="mb-3">
-          <label for="nivel" class="form-label">Nivel</label>
-          <select class="form-select" id="nivel" required>
-            <option value="" selected disabled>Seleccionar Nivel</option>
-          </select>
-        </div>
+          <!-- Dropdown Nivel -->
+          <div class="col-md-4">
+            <label for="nivel" class="form-label">Nivel</label>
+            <select class="form-select" id="nivel" required>
+              <option value="" selected disabled>Seleccionar Nivel</option>
+            </select>
+          </div>
 
-        <!-- Dropdown Turno -->
-        <div class="mb-3">
-          <label for="turno" class="form-label">Turno</label>
-          <select class="form-select" id="turno" required>
-            <option value="" selected disabled>Seleccionar Turno</option>
-            <option value="mañana">Mañana</option>
-            <option value="tarde">Tarde</option>
-          </select>
+          <!-- Dropdown Turno -->
+          <div class="col-md-4">
+            <label for="turno" class="form-label">Turno</label>
+            <select class="form-select" id="turno" required>
+              <option value="" selected disabled>Seleccionar Turno</option>
+              <option value="mañana">Mañana</option>
+              <option value="tarde">Tarde</option>
+            </select>
+          </div>
         </div>
 
         <!-- Dropdown Aulas -->
