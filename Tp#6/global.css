@@ -10,3 +10,13 @@
 .bg-nav {
   background: rgb(43, 90, 233);
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}

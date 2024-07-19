@@ -28,7 +28,7 @@
 }
 
 .img-grande {
-  height: 80vh;
+  object-fit: cover;
 }
 
 .customer-width {
