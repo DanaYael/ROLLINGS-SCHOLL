@@ -2,3 +2,11 @@
 .navbar-nav .nav-item .nav-link.active {
   color: white;
 }
+
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.bg-nav {
+  background: rgb(43, 90, 233);
+}
