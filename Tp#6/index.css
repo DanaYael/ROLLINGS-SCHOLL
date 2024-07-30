@@ -12,9 +12,13 @@
   background: rgb(26, 63, 225);
 }
 
+.img-grande {
+  height: 70vh;
+}
+
 .img-fluid {
   width: 100%;
-  height: 100%;
+  height: 50vh;
   object-fit: cover;
 }
 
