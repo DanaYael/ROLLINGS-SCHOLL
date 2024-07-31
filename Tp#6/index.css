@@ -40,8 +40,9 @@
   width: 80vw;
 }
 
-.h2-titulo-car {
+.h2-titulo-card {
   margin-left: 160px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footer {

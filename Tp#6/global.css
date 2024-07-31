@@ -21,8 +21,28 @@ footer {
   margin-top: auto;
 }
 
+/* inscribirse */
+
+.titulo-formulario {
+  font-size: 2.5em;
+}
+
 /* cursos */
 
-.titulo {
-  margin-bottom: 50px;
+.titulo-curso {
+  font-size: 2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.animate__pulse {
+  duration: 5s;
+}
+
+.bg-card {
+  background: rgba(235, 225, 225, 0.514);
+}
+
+.tituloh5 {
+  font-size: 1.5em;
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
